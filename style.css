@@ -1,0 +1,9 @@
+body {
+    margin-top: 70px; /* Adjust depending on navbar height */
+}
+.section {
+    padding: 60px 0;
+}
+.contact-section {
+    background-color: #f8f9fa;
+}
