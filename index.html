@@ -1,79 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <nav id="desktop-nav">
+    <div class="logo">Chongjie Wen</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#professional">Professional</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="profile">
+
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Chongjie Wen</h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Josh_Wen Resume.pdf')">
+          Download CV
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin_icon.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/chongjiewen'" />
+        <img src="./assets/github_icon.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/lucklyjosh'" />
+      </div>
+    </div>
+    <div class="section__pic-container">
+      <img src="./assets/Josh.jpeg" alt="Josh's picture" />
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>Brief introduction about yourself.</p>
-        </div>
-    </section>
+  <section id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>I am a passionate and adaptable software engineer with a strong foundation in computer science, currently pursuing 
+        a Master's degree at Northeastern University. My journey into software development has been defined by a commitment 
+        to continuous learning and the application of my skills across diverse projects. With proficiency in technologies 
+        such as Java, Python, React.js, and MySQL, I have consistently demonstrated my ability to adapt and thrive in 
+        challenging environments, underscoring my eagerness to grow and contribute to the field of software engineering.</p>
+      <p>My technical journey, focused on software development, includes a significant internship where I honed my skills 
+        in real-world applications. These experiences have provided me with a deep understanding of both backend and frontend 
+        development, with a strong emphasis on quality, efficiency, and user-centric design.</p>
+      <p>I have worked on projects ranging from developing user-friendly interfaces for web applications to contributing 
+        to the backend development of data management systems. These experiences have equipped me with practical knowledge 
+        in software development, always prioritizing quality and efficiency. As a Master's student in Computer Science at 
+        Northeastern University, I am continually deepening my technical expertise and staying informed of the latest trends 
+        in software engineering.</p>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h1>Projects</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="project-image.jpg" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of project 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for more projects -->
-            </div>
-        </div>
-    </section>
+  <section id="skill">
+    <h2>Explore my skills</h2>
+    <div id="myskill">
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h1>Contact</h1>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+      <div class="skill-category">
+        <h3 class="skill-title">Programming Language</h3>
+        <div class="skills-list">
+          <span>Java</span>
+          <span>C/C++</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>SQL</span>
+          <span>Swift</span>
+          <span>Typescript</span>
+          <span>HTML5/CSS</span>
         </div>
-    </section>
+      </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <div class="skill-category">
+        <h3 class="skill-title">Development Tools</h3>
+        <div class="skills-list">
+          <span>Git</span>
+          <span>AWS</span>
+          <span>MySQL Workbench</span>
+          <span>Postman</span>
+          <span>Render</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="skill-title">Technologies/Frameworks</h3>
+        <div class="skills-list">
+          <span>React</span>
+          <span>TensorFlow</span>
+          <span>Bootstrap</span>
+          <span>Firebase</span>
+          <span>Flask</span>
+          <span>TCP/IP</span>
+          <span>Node.js</span>
+          <span>Scikit-learn</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>Spring Boot</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="skill-title">Machine Learning</h3>
+        <div class="skills-list">
+          <span>TensorFlow</span>
+          <span>PyTorch</span>
+          <span>Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="professional">
+    <div class="professional-container">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>Software Engineer Intern - IpserLab</h3>
+        <p><b>September 2024 - Current</b></p>
+        <ul>
+          <li>Collaborated with cross-functional teams to design and develop startup websites using Figma, enhancing 
+            user interface and experience.</li>
+          <li>Led the back-end development of profile pages, integrating user 
+            authentication and data management functions, boosting user engagement 
+            by 20%.</li>
+          <li>Optimized API response times for profile page functionalities, reducing page load time by 30% and 
+            significantly enhancing system scalability through module reconstruction.</li>
+          <li>Assisted in developing technical specifications and timelines, achieving 
+            a 15% reduction in project delivery time.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Project</h2>
+    <div class="project-card-container">
+      <div class="project-card">
+        <img src="./assets/steamProject-image.jpg" alt="Steam Game Library Image" class="project-image" />
+        <div class="project-details">
+          <h3>Steam Game Library</h3>
+          <p>Oct 2023 - Dec 2023</p>
+          <p>A full-stack project using Flask and React.js for building a Steam game library, with user account creation, game ratings, and comment features, backed by a MySQL database.</p>
+          <div class="skills-list">
+            <span>Flask,</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>Flask</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/lucklyjosh/Database-project'">
+            Github Repo
+          </button>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="./assets/Tourism-image.jpg" alt="Tourism Image" class="project-image" />
+        <div class="project-details">
+          <h3>Tourism Accommodation Platform</h3>
+          <p>Oct 2023 - Dec 2023</p>
+          <p>Developed an admin interface with TypeScript and React.js for managing bookings and accommodations, deployed on Netlify.</p>
+          <div class="skills-list">
+            <span>MongoDB</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/lucklyjosh/explore_stay'">
+            Github Repo
+          </button>
+          <!-- <button class="btn btn-color-2" onclick="location.href='###'">
+            Live Demo
+          </button> -->
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="./assets/Foodies.jpg" alt="Foodies Image" class="project-image" />
+        <div class="project-details">
+          <h3>Foodie Recipe Platform</h3>
+          <p>Feb 2024 - Apr 2024</p>
+          <p>Built a recipe app using Swift and Firebase, enabling user login via email and Google, with features like recipe likes and profile management.</p>
+          <div class="skills-list">
+            <span>Swift</span>
+            <span>Firebase</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/fei19904287/CS5520-Final-Project'">
+            Github Repo
+          </button>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="./assets/words.jpg" alt="ML Project Image" class="project-image" />
+        <div class="project-details">
+          <h3>Toxic Comment Classification</h3>
+          <p>Jun 2024 - Aug 2024</p>
+          <p>It's built to help detect and filter harmful language in user-generated content</p>
+          <div class="skills-list">
+            <span>scikit-learn</span>
+            <span>matplotlib</span>
+            <span>pandas</span>
+            <span>seaborn</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/lucklyjosh/Toxic-Comment-Classification'">
+            Github Repo
+          </button>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="email">
+          <h3>Email</h3>
+          <p><a href="mailto:lucklyjosh@gmail.com">lucklyjosh@gmail.com</a></p>
+        </div>
+        <div class="linkedin">
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/chongjiewen/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 </body>
+
 </html>
