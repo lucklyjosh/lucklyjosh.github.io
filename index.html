@@ -22,7 +22,17 @@
       </ul>
     </div>
   </nav>
+  <!-- Mobile Menu Icon -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skill" onclick="toggleMenu()">Skill</a>
+    <a href="#professional" onclick="toggleMenu()">Professional</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
   <section id="profile">
 
     <div class="section__text">
@@ -52,18 +62,27 @@
   <section id="about">
     <div class="about-container">
       <h2>About Me</h2>
-      <p>I am a passionate and adaptable software engineer with a strong foundation in computer science, currently pursuing 
-        a Master's degree at Northeastern University. My journey into software development has been defined by a commitment 
-        to continuous learning and the application of my skills across diverse projects. With proficiency in technologies 
-        such as Java, Python, React.js, and MySQL, I have consistently demonstrated my ability to adapt and thrive in 
-        challenging environments, underscoring my eagerness to grow and contribute to the field of software engineering.</p>
-      <p>My technical journey, focused on software development, includes a significant internship where I honed my skills 
-        in real-world applications. These experiences have provided me with a deep understanding of both backend and frontend 
+      <p>I am a passionate and adaptable software engineer with a strong foundation in computer science, currently
+        pursuing
+        a Master's degree at Northeastern University. My journey into software development has been defined by a
+        commitment
+        to continuous learning and the application of my skills across diverse projects. With proficiency in
+        technologies
+        such as Java, Python, React.js, and MySQL, I have consistently demonstrated my ability to adapt and thrive in
+        challenging environments, underscoring my eagerness to grow and contribute to the field of software engineering.
+      </p>
+      <p>My technical journey, focused on software development, includes a significant internship where I honed my
+        skills
+        in real-world applications. These experiences have provided me with a deep understanding of both backend and
+        frontend
         development, with a strong emphasis on quality, efficiency, and user-centric design.</p>
-      <p>I have worked on projects ranging from developing user-friendly interfaces for web applications to contributing 
-        to the backend development of data management systems. These experiences have equipped me with practical knowledge 
-        in software development, always prioritizing quality and efficiency. As a Master's student in Computer Science at 
-        Northeastern University, I am continually deepening my technical expertise and staying informed of the latest trends 
+      <p>I have worked on projects ranging from developing user-friendly interfaces for web applications to contributing
+        to the backend development of data management systems. These experiences have equipped me with practical
+        knowledge
+        in software development, always prioritizing quality and efficiency. As a Master's student in Computer Science
+        at
+        Northeastern University, I am continually deepening my technical expertise and staying informed of the latest
+        trends
         in software engineering.</p>
     </div>
   </section>
@@ -133,14 +152,14 @@
         <h3>Software Engineer Intern - IpserLab</h3>
         <p><b>September 2024 - Current</b></p>
         <ul>
-          <li>Collaborated with cross-functional teams to design and develop startup websites using Figma, enhancing 
+          <li>Collaborated with cross-functional teams to design and develop startup websites using Figma, enhancing
             user interface and experience.</li>
-          <li>Led the back-end development of profile pages, integrating user 
-            authentication and data management functions, boosting user engagement 
+          <li>Led the back-end development of profile pages, integrating user
+            authentication and data management functions, boosting user engagement
             by 20%.</li>
-          <li>Optimized API response times for profile page functionalities, reducing page load time by 30% and 
+          <li>Optimized API response times for profile page functionalities, reducing page load time by 30% and
             significantly enhancing system scalability through module reconstruction.</li>
-          <li>Assisted in developing technical specifications and timelines, achieving 
+          <li>Assisted in developing technical specifications and timelines, achieving
             a 15% reduction in project delivery time.</li>
         </ul>
       </div>
@@ -155,7 +174,8 @@
         <div class="project-details">
           <h3>Steam Game Library</h3>
           <p>Oct 2023 - Dec 2023</p>
-          <p>A full-stack project using Flask and React.js for building a Steam game library, with user account creation, game ratings, and comment features, backed by a MySQL database.</p>
+          <p>A full-stack project using Flask and React.js for building a Steam game library, with user account
+            creation, game ratings, and comment features, backed by a MySQL database.</p>
           <div class="skills-list">
             <span>Flask,</span>
             <span>MySQL</span>
@@ -167,13 +187,14 @@
           </button>
         </div>
       </div>
-      
+
       <div class="project-card">
         <img src="./assets/Tourism-image.jpg" alt="Tourism Image" class="project-image" />
         <div class="project-details">
           <h3>Tourism Accommodation Platform</h3>
           <p>Oct 2023 - Dec 2023</p>
-          <p>Developed an admin interface with TypeScript and React.js for managing bookings and accommodations, deployed on Netlify.</p>
+          <p>Developed an admin interface with TypeScript and React.js for managing bookings and accommodations,
+            deployed on Netlify.</p>
           <div class="skills-list">
             <span>MongoDB</span>
             <span>TypeScript</span>
@@ -188,13 +209,14 @@
           </button> -->
         </div>
       </div>
-      
+
       <div class="project-card">
         <img src="./assets/Foodies.jpg" alt="Foodies Image" class="project-image" />
         <div class="project-details">
           <h3>Foodie Recipe Platform</h3>
           <p>Feb 2024 - Apr 2024</p>
-          <p>Built a recipe app using Swift and Firebase, enabling user login via email and Google, with features like recipe likes and profile management.</p>
+          <p>Built a recipe app using Swift and Firebase, enabling user login via email and Google, with features like
+            recipe likes and profile management.</p>
           <div class="skills-list">
             <span>Swift</span>
             <span>Firebase</span>
@@ -204,7 +226,7 @@
           </button>
         </div>
       </div>
-      
+
       <div class="project-card">
         <img src="./assets/words.jpg" alt="ML Project Image" class="project-image" />
         <div class="project-details">
@@ -217,12 +239,13 @@
             <span>pandas</span>
             <span>seaborn</span>
           </div>
-          <button class="btn btn-color-1" onclick="location.href='https://github.com/lucklyjosh/Toxic-Comment-Classification'">
+          <button class="btn btn-color-1"
+            onclick="location.href='https://github.com/lucklyjosh/Toxic-Comment-Classification'">
             Github Repo
           </button>
         </div>
       </div>
-      
+
 
     </div>
 
@@ -245,6 +268,13 @@
       </div>
     </div>
   </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
 
 
 </body>
